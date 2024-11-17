@@ -1,0 +1,5 @@
+venv
+.venv
+build
+.idea
+ansiplot/__pycache__
