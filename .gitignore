@@ -1,5 +1,7 @@
 venv
 .venv
 build
+dist
+ansiplot.egg-info
 .idea
 ansiplot/__pycache__

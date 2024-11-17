@@ -49,7 +49,7 @@ plot.hbar((-1, 1), 0, symbol=Pretty.xaxis, title="x=0 or y=0")
 plot.show()
 ```
 
-![example](example/example.png)
+![Example image](example/example.png)
 
 You can export the text manually with `plot.text()`.
 Both this and the show method can create

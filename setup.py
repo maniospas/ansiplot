@@ -16,7 +16,7 @@ setuptools.setup(
     description="Legible console plotting in Python.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://fairbench.readthedocs.io",
+    url="https://github.com/maniospas/ansiplot",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
