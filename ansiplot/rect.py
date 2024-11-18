@@ -35,6 +35,8 @@ class Rect(Canvas):
         min_y, max_y = self._ylimits
         height = len(self._grid)
         width = len(self._grid[0])
+        if y is None:
+            ymin, y = self._ylimits
 
         grid_x = normalize(x, min_x, max_x, width)
         grid_ymax = height - 1 - normalize(y, min_y, max_y, height)
@@ -63,6 +65,8 @@ class Rect(Canvas):
         min_y, max_y = self._ylimits
         height = len(self._grid)
         width = len(self._grid[0])
+        if x is None:
+            xmin, x = self._xlimits
 
         grid_y = normalize(y, min_y, max_y, height)
         grid_xmax = normalize(x, min_x, max_x, width)

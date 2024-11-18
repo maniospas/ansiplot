@@ -60,6 +60,8 @@ class Canvas:
         symbol = self._prepare_symbol(title, symbol)
         if isinstance(y, Iterable):
             ymin, y = y
+        elif y is None:
+            ymin = 0
         else:
             ymin = 0
             y = float(y)
@@ -72,6 +74,8 @@ class Canvas:
         symbol = self._prepare_symbol(title, symbol)
         if isinstance(x, Iterable):
             xmin, x = x
+        elif x is None:
+            xmin = 0
         else:
             xmin = 0
             x = float(x)

@@ -12,8 +12,8 @@ plot.plot(x, y1, title="cos")
 plot.plot(x, y2, title="cos offset")
 plot.plot(x, y3, title="cos")
 
-plot.bar(0, (-1, 1), symbol="▕▎")
-plot.hbar((-1, 1), 0, symbol=Pretty.xaxis, title="x=0 or y=0")
+plot.bar(0, None, symbol="▕▎")
+plot.hbar(None, 0, symbol=Pretty.xaxis, title="x=0 or y=0")
 
 plot.show()
 

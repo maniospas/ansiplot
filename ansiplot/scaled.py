@@ -38,19 +38,21 @@ class Scaled(Canvas):
         min_y = float("inf")
         max_y = float("-inf")
         for x, y, _, xmin in self._hbars:
-            min_x = min(x, min_x)
-            min_x = min(xmin, min_x)
-            max_x = max(x, max_x)
-            max_x = max(xmin, max_x)
-            min_y = min(x, min_y)
-            max_y = max(x, max_y)
+            if x is not None:
+                min_x = min(x, min_x)
+                min_x = min(xmin, min_x)
+                max_x = max(x, max_x)
+                max_x = max(xmin, max_x)
+            min_y = min(y, min_y)
+            max_y = max(y, max_y)
         for x, y, _, ymin in self._bars:
             min_x = min(x, min_x)
             max_x = max(x, max_x)
-            min_y = min(x, min_y)
-            min_y = min(ymin, min_y)
-            max_y = max(x, max_y)
-            max_y = max(ymin, max_y)
+            if y is not None:
+                min_y = min(y, min_y)
+                min_y = min(ymin, min_y)
+                max_y = max(y, max_y)
+                max_y = max(ymin, max_y)
         for x, y, _ in self._scatters:
             for x, y in zip(x, y):
                 min_x = min(x, min_x)
@@ -77,8 +79,12 @@ class Scaled(Canvas):
             rect.scatter(x, y, symbol)
 
         for x, y, symbol, xmin in self._hbars:
+            if x is None:
+                xmin, x = min_x, max_x
             rect.hbar((xmin, x), y, symbol=symbol)
         for x, y, symbol, ymin in self._bars:
+            if y is None:
+                ymin, y = min_y, max_y
             rect.bar(x, (ymin, y), symbol=symbol)
 
         return rect.text(legend=False)
