@@ -5,3 +5,4 @@ dist
 ansiplot.egg-info
 .idea
 ansiplot/__pycache__
+tests/__pycache__
