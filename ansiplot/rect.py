@@ -44,15 +44,15 @@ class Rect(Canvas):
 
         if grid_x < 0 or grid_x >= width:
             raise Exception(
-                f"Value {x} lies outside the x-axis range [{min_x}, {max_x}] of this Rext canvas"
+                f"Value {x} lies outside the x-axis range [{min_x}, {max_x}] of this Rect canvas"
             )
         if grid_ymax < 0 or grid_ymax >= height:
             raise Exception(
-                f"Value {y} lies outside the y-axis range [{min_y}, {max_y}] of this Rext canvas"
+                f"Value {y} lies outside the y-axis range [{min_y}, {max_y}] of this Rect canvas"
             )
         if grid_ymin < 0 or grid_ymin >= height:
             raise Exception(
-                f"Value {ymin} lies outside the y-axis range [{min_y}, {max_y}] of this Rext canvas"
+                f"Value {ymin} lies outside the y-axis range [{min_y}, {max_y}] of this Rect canvas"
             )
 
         for grid_y in range(
@@ -74,15 +74,15 @@ class Rect(Canvas):
 
         if grid_xmax < 0 or grid_xmax >= width:
             raise Exception(
-                f"Value {x} lies outside the x-axis range [{min_x}, {max_x}] of this Rext canvas"
+                f"Value {x} lies outside the x-axis range [{min_x}, {max_x}] of this Rect canvas"
             )
         if grid_xmin < 0 or grid_xmax >= width:
             raise Exception(
-                f"Value {xmin} lies outside the x-axis range [{min_x}, {max_x}] of this Rext canvas"
+                f"Value {xmin} lies outside the x-axis range [{min_x}, {max_x}] of this Rect canvas"
             )
         if grid_y < 0 or grid_y >= height:
             raise Exception(
-                f"Value {y} lies outside the y-axis range [{min_y}, {max_y}] of this Rext canvas"
+                f"Value {y} lies outside the y-axis range [{min_y}, {max_y}] of this Rect canvas"
             )
 
         for grid_x in range(grid_xmin, grid_xmax + 1):
