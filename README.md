@@ -1,5 +1,8 @@
 # ANSIplot
 
+![Compatibility](https://github.com/maniospas/ansiplot/actions/workflows/compatibility.yaml/badge.svg)
+
+
 A small utility library for legible console plotting
 in Python. Plot differences remain mostly legible,
 even for highly overlapping plots and small canvas
