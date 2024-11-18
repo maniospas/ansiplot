@@ -5,7 +5,7 @@ class Pretty:
     separator = "▕▎"
     block = "█"
 
-    symbols = "*-+xo□◇#@%ate&gvnqdczuij"
+    symbols = "*-+xo□◇#@%&|\\/=atevnqpbdczuij"
 
     colors = [
         "\033[91m",  # Red

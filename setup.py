@@ -10,7 +10,7 @@ with open("README.md", "r") as file:
 
 setuptools.setup(
     name="ansiplot",
-    version="0.1.1",
+    version="0.1.2",
     author="Emmanouil (Manios) Krasanakis",
     author_email="maniospas@hotmail.com",
     description="Legible console plotting in Python.",
