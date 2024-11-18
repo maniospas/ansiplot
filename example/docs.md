@@ -6,12 +6,23 @@ on. Canvases have methods for adding data, and methods for obtaining the
 final result, such as `show()` that prints to the console.
 
 
-- [Canvas](#canvas)
+Canvases <br>[Canvas](#canvas)
 -- [Scaled](#scaled)
 -- [Rect](#rect)
-- [plot](#plot)
+
+Plot methods<br>[plot](#plot)
 -- [scatter](#scatter)
 -- [bar](#bar)
+
+<h3>
+
+## Palettes
+
+In all canvases below, you are able to set a color palette. Here is a
+list of those, obtained with `ansiplot.palette.info()`.
+
+<img src="colors.png" alt="Palettes" width="600">
+
 
 <hr>
 
