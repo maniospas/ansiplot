@@ -33,5 +33,5 @@ numeric iterable -such as numpy arrays- can be given as data.
 
 ## Read more
 
-[Showcase](example/showcase.md) - see all features in action<br>
+[Showcase](example/showcase.md) - see several features in action<br>
 [Documentation](example/docs.md) - available methods

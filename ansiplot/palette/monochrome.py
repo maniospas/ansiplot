@@ -15,7 +15,6 @@ class Monochrome:
         "\033[38;5;248m",  # Light Gray
         "\033[38;5;252m",  # Very Light Gray
         "\033[38;5;255m",  # Almost White
-        "\033[38;5;239m",  # Charcoal
         "\033[38;5;251m",  # Off-White
         "\033[38;5;250m",  # Silver
     ]
