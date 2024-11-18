@@ -7,7 +7,7 @@ y1 = [math.cos(value * 10) for value in x]
 y2 = [math.cos(value * 10 + 0.1) for value in x]
 y3 = [math.sin(value * 10) for value in x]
 
-plot = ansiplot.Scaled(60, 10, axis=False)
+plot = ansiplot.Scaled(40, 10, axis=False)
 plot.plot(x, y1, title="cos")
 plot.plot(x, y2, title="cos offset")
 plot.plot(x, y3, title="cos")

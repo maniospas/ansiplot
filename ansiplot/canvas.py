@@ -1,6 +1,7 @@
 import re
 from typing import Optional, Iterable
 from ansiplot.palette import Pretty
+from ansiplot.utils import enable_ansi
 
 
 class Canvas:
