@@ -11,5 +11,5 @@ values = {
 
 canvas = ansiplot.Scaled(40, 10)
 for pos, (key, value) in enumerate(values.items()):
-    canvas.bar(pos, value, title=key)
+    canvas.bar(pos, value, symbol=canvas.current_color()+canvas.palette.block).point(pos, 0, title=key)
 canvas.show()
