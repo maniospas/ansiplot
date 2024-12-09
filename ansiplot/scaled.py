@@ -73,11 +73,6 @@ class Scaled(Canvas):
                     axis=self.axis,
                     palette=self.palette)
 
-        for x, y, symbol in self._plots:
-            rect.plot(x, y, symbol)
-        for x, y, symbol in self._scatters:
-            rect.scatter(x, y, symbol)
-
         for x, y, symbol, xmin in self._hbars:
             if x is None:
                 xmin, x = min_x, max_x
@@ -86,5 +81,10 @@ class Scaled(Canvas):
             if y is None:
                 ymin, y = min_y, max_y
             rect.bar(x, (ymin, y), symbol=symbol)
+
+        for x, y, symbol in self._plots:
+            rect.plot(x, y, symbol)
+        for x, y, symbol in self._scatters:
+            rect.scatter(x, y, symbol)
 
         return rect.text(legend=False)
