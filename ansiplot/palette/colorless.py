@@ -1,5 +1,6 @@
 class Colorless:
     """Typical colorless plots."""
+
     xaxis = "▬"
     yaxis = "▎"
     separator = "▕▎"

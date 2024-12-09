@@ -1,5 +1,6 @@
 class Pretty:
     """Some pretty symbols and ansi codes for unicode reads and writes."""
+
     xaxis = "▬"
     yaxis = "▎"
     separator = "▕▎"

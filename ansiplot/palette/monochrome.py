@@ -20,5 +20,5 @@ class Monochrome:
     ]
 
     # Reset color to white
-    #reset_color = "\033[97m"
+    # reset_color = "\033[97m"
     reset_color = "\033[0m"

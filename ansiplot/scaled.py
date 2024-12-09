@@ -4,12 +4,10 @@ from ansiplot.rect import Rect
 
 class Scaled(Canvas):
     """A variation of Rect canvas that automatically determines scaling limits."""
-    def __init__(self,
-        width: int,
-        height: int,
-        symbol_state: int = 0,
-        palette=None,
-        axis=True):
+
+    def __init__(
+        self, width: int, height: int, symbol_state: int = 0, palette=None, axis=True
+    ):
         super().__init__(palette=palette, symbol_state=symbol_state)
         self.width = width
         self.height = height
@@ -66,12 +64,14 @@ class Scaled(Canvas):
                 min_y = min(y, min_y)
                 max_y = max(y, max_y)
 
-        rect = Rect(self.width,
-                    self.height,
-                    xlimits=(min_x, max_x),
-                    ylimits=(min_y, max_y),
-                    axis=self.axis,
-                    palette=self.palette)
+        rect = Rect(
+            self.width,
+            self.height,
+            xlimits=(min_x, max_x),
+            ylimits=(min_y, max_y),
+            axis=self.axis,
+            palette=self.palette,
+        )
 
         for x, y, symbol, xmin in self._hbars:
             if x is None:

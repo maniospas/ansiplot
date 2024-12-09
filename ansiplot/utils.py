@@ -11,4 +11,5 @@ def enable_ansi():
         except Exception as e:
             print(f"Could not enable ANSI on Windows: {e}")
 
+
 enable_ansi()

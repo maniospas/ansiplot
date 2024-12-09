@@ -12,12 +12,15 @@ class Canvas:
         self.legend = ""
         self.palette = Pretty if palette is None else palette
 
+    def current_color(self):
+        return self.palette.colors[self.symbol_state % len(self.palette.colors)]
+
+    def current_colorless_symbol(self):
+        return self.palette.symbols[self.symbol_state % len(self.palette.symbols)]
+
     def _prepare_symbol(self, title, symbol):
         if symbol is None:
-            symbol = (
-                self.palette.colors[self.symbol_state % len(self.palette.colors)]
-                + self.palette.symbols[self.symbol_state % len(self.palette.symbols)]
-            )
+            symbol = self.current_color() + self.current_colorless_symbol()
             self.symbol_state += 1
         else:
             symbol = f"{self.palette.reset_color}{symbol}"
